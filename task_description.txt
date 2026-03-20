@@ -1,0 +1,49 @@
+# Task
+
+## Task: Simulate Simple Game Console Input System Using STM32 Blue Pill, Proteus, and vJoy
+
+### Objective
+
+Design and simulate a basic game console input system using the STM32 Blue Pill microcontroller. The system should read button presses (using switches), send the input data via UART, and interface with the vJoy virtual joystick on a PC.
+
+---
+
+### Task Steps
+
+1. **Circuit Design in Proteus**
+    - Design a schematic using the STM32 Blue Pill and at least four push-button switches as inputs.
+    - Connect the switches to four GPIO pins on the STM32, using appropriate pull-down resistors.
+    - Use the COMPIM module in Proteus to simulate UART communication with a PC.
+2. **Firmware Development**
+    - Write firmware for the STM32 that reads the state of each switch.
+    - Pack the switch states into a single byte and transmit this byte over UART at regular intervals (e.g., 50 times per second).
+3. **Simulation and Testing**
+    - Load your compiled firmware into the STM32 in Proteus.
+    - Simulate button presses and verify that the correct data is sent over UART.
+4. **PC Integration with vJoy**
+    - On your PC, set up vJoy and a serial-to-vJoy bridge script (Python or another language).
+    - The script should receive the UART data and update the vJoy virtual joystick buttons accordingly.
+    - Here is a step by step guide for using vjoy. —> [Guide](https://www.notion.so/21c8b321359d8034bb5bd01ca1ed184d?pvs=21)
+5. **Demonstration**
+    - Demonstrate that pressing the switches in Proteus correctly lights up the corresponding virtual joystick buttons in the Windows Game Controllers panel.
+
+---
+
+### Deliverables
+
+- Proteus schematic file (.pdsprj)
+- STM32 firmware source code (.c/.h or .ino)
+- Serial-to-vJoy bridge script
+- A short video or screenshots showing the simulation and vJoy response
+- A brief report (1-2 pages) explaining your design choices and how each part works
+
+---
+
+### Evaluation Criteria
+
+- Correctness and clarity of the schematic
+- Functionality and efficiency of the firmware
+- Successful integration with vJoy
+- Quality of documentation and demonstration
+
+---
