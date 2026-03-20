@@ -192,32 +192,6 @@ Button press in Proteus → UART transmission → PC script processing → vJoy 
 
 * Additional buttons or analog inputs can be added easily
 
----
 
-## Evaluation Criteria Mapping
 
-| Criteria          | Implementation                                  |
-| ----------------- | ----------------------------------------------- |
-| Schematic clarity | Structured layout with labeled sections         |
-| Firmware quality  | Efficient bit-packing and periodic transmission |
-| vJoy integration  | Real-time mapping via serial bridge             |
-| Documentation     | README, report, and demonstration               |
 
----
-
-## Future Improvements
-
-* Add joystick (analog) input using ADC
-* Implement debouncing (hardware or software)
-* Add USB HID instead of UART for direct plug-and-play
-* Optimize power usage (sleep modes already included in design)
-
----
-
-## Deliverables Checklist
-
-* Proteus schematic (.pdsprj)
-* STM32 firmware source code
-* Serial-to-vJoy script
-* Demo screenshots or video
-* Documentation (README and report)
